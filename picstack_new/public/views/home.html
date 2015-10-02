@@ -1,0 +1,11 @@
+<div class="picwrapper" ng-controller="HomeController">
+	<div class="square" ng-repeat="pic in pics">
+	   <!--<img ng-src="../{{pic.url}}"> -->
+       <img src="{{pic.url}}"/>
+	   <a class="comments" href="deets/{{pic.id}}">{{pic.numComments}} comments</a>
+	   <!-- attach plusone to arrows -->
+	   <span class="upvote glyphicon glyphicon-chevron-up" aria-hidden="true" ng-click="upvote(pic._id)"></span>
+	   <p class="likes">{{pic.likes}}</p>
+	   <span class="downvote glyphicon glyphicon-chevron-down" aria-hidden="true" ng-click="downvote(pic._id)"></span>
+	</div>
+</div>

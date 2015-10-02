@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<!--<base href="/">-->
+
+	<title>DikYak</title>
+	<link rel="stylesheet" href="css/style.css"></link>
+     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster"> 
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/angular/angular.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script> 
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+--> <script src="javascript/app.js"></script>
+	<script src="javascript/services/picsService.js"></script>
+    
+	<script src="javascript/controllers/homeController.js"></script>
+	<script src="javascript/appRoutes.js"></script>
+</head>
+<body>
+
+<div id="top">
+	<h1 id="title">DikYak</h1>
+	<i class="fa fa-plus fa-2x"></i>
+</div>
+
+<div id="main">
+    <div ng-view></div>
+</div>
+    
+<div id="navbar">
+    <a href="#"><i class="fa fa-home fa-2x"></i></a>
+    <a href="#mine"><i class="fa fa-user fa-2x"></i></a>
+    <a href="#settings"><i class="fa fa-gear fa-2x"></i></a>
+</div>
+<!--
+<nav class="navbar navbar-default navbar-fixed-bottom">
+	<div class="container">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="/"><i class="fa fa-home"></i></a></li>
+				<li><a href="/mine"></a></li>
+				<li><a href="/settings">Settings</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<script>
+$(function() {
+    $("#navbar > a").click(function() {
+        $("#navbar > a").removeClass("active");
+        $(this).addClass("active");
+    });
+});
+</script>
+-->
+</body>
+</html>

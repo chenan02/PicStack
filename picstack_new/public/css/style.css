@@ -1,0 +1,101 @@
+<style>
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#top {
+	width: 100%;
+	height: 50px;
+    position:fixed;
+    background: rgb(232, 69, 69);
+    text-align: center;
+    z-index: 100;
+}
+
+#title {
+    margin: 6px;
+    font-family: 'Lobster';
+}
+
+.fa-plus {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+#navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(232, 69, 69);
+    text-align: center;
+    z-index: 100;
+}
+
+#navbar > a > i {
+    margin-top: 10px;
+    margin-right: 50px;
+    color: black;
+}
+
+.active {
+    background: rgb(232, 69, 69, 0.3);
+}
+
+#main {
+    top: 50px;
+}
+
+ng-view {
+    height: 100%;
+}
+
+.picwrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.square {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 25px;
+}
+
+.square > img {
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+    height: 80vmin;
+    width: 80vmin;
+}
+
+.square > .upvote {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+
+.square > .downvote {
+    position: absolute;
+    right: 5%;
+    top: 60%;
+}
+
+.square > .likes {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+}
+
+.square > .comments {
+    display: block;
+    margin: auto;
+    width: 20vmin;
+    text-align: center;
+}
+
+</style>
